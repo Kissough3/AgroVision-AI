@@ -54,5 +54,5 @@ jobs:
         run: ruff check .
       - name: Format check (ruff)
         run: ruff format --check .
-      - name: Tests (placeholder)
-        run: echo "No tests yet" && exit 0
+      - name: Tests
+        run: python -m pytest -q
